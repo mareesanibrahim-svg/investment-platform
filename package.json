@@ -2,11 +2,11 @@
   "name": "investment-platform-monorepo",
   "version": "1.0.0",
   "scripts": {
-    "build": "cd client && npm install && npm run build",
-    "install-client": "cd client && npm install",
-    "build-client": "cd client && npm run build",
-    "install-server": "cd server && npm install",
-    "start-server": "cd server && node index.js"
+    "build": "npm run build -w client",
+    "install-client": "npm install -w client",
+    "build-client": "npm run build -w client",
+    "install-server": "npm install -w server",
+    "start-server": "npm start -w server"
   },
   "workspaces": [
     "client",
